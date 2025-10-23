@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Dane komputerowe - Smuga Jan 2Fg3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 0 auto;
+            border: 3px solid red;
+        }
+        caption {
+            font-size: 22px;
+            font-weight: bold;
+            background-color: #001a57;
+            color: white;
+            padding: 10px;
+        }
+        th, td {
+            border: 1px solid gray;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #001a57;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .red-text {
+            color: red;
+        }
+        .yellow-text {
+            color: yellow;
+        }
+        .footer {
+            background-color: #001a57;
+            color: white;
+            font-weight: bold;
+        }
+        .source {
+            margin-top: 10px;
+            font-style: italic;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Dane komputerowe - Tymon Trzaskalski 1p2</caption>
+        <thead>
+            <tr>
+                <th>Model karty graficznej</th>
+                <th>Taktowanie bazowe</th>
+                <th>Rozmiar pamięci</th>
+                <th>Szyna pamięci</th>
+                <th>Typ chłodzenia</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td class="yellow-text">RTX 2080</td><td>1515 MHz</td><td class="red-text">8 GB</td><td>256-bit</td><td rowspan="6">Aktywne</td></tr>
+            <tr><td class="yellow-text">RTX 2070</td><td>1410 MHz</td><td class="red-text">8 GB</td><td>256-bit</td></tr>
+            <tr><td class="yellow-text">RTX 2060</td><td>1365 MHz</td><td class="red-text">6 GB</td><td>192-bit</td></tr>
+            <tr><td class="yellow-text">GTX 1660</td><td>1785 MHz</td><td class="red-text">6 GB</td><td>192-bit</td></tr>
+            <tr><td class="yellow-text">GTX 1550</td><td>1860 MHz</td><td class="red-text">4 GB</td><td>128-bit</td></tr>
+            <tr><td class="yellow-text">GTX 1060</td><td>1506 MHz</td><td class="red-text">6 GB</td><td>192-bit</td></tr>
+        </tbody>
+        <tfoot>
+            <tr><td colspan="5" class="footer">Dane komputerowe</td></tr>
+        </tfoot>
+    </table>
+    <p class="source">Źródło: własne</p>
+</body>
+</html>
