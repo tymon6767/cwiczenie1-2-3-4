@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz o Grach Komputerowych</title>
+</head>
+<body>
+
+    <h1>Formularz o Grach Komputerowych</h1>
+
+    <form>
+        <p><b>Opis gry:</b></p>
+        <textarea id="opisGry" name="opisGry" rows="3" cols="60"></textarea>
+        <br>
+        <br>
+
+        <p><b>Ocena gry:</b></p>
+        <input type="radio" id="ocena1" name="ocenaGry" value="1"><label for="ocena1"> 1</label>
+        <input type="radio" id="ocena2" name="ocenaGry" value="2"><label for="ocena2"> 2</label>
+        <input type="radio" id="ocena3" name="ocenaGry" value="3"><label for="ocena3"> 3</label>
+        <input type="radio" id="ocena4" name="ocenaGry" value="4"><label for="ocena4"> 4</label>
+        <br>
+        <br>
+
+        <p><b>Gatunek gry:</b></p>
+        <input type="radio" id="akcji" name="gatunekGry" value="Akcji"><label for="akcji"> Akcji</label>
+        <input type="radio" id="przygodowa" name="gatunekGry" value="Przygodowa"><label for="przygodowa"> Przygodowa</label>
+        <input type="radio" id="strategiczna" name="gatunekGry" value="Strategiczna"><label for="strategiczna"> Strategiczna</label>
+        <br>
+        <br>
+
+        <p><b>Język gry:</b></p>
+        <input type="checkbox" id="angielski" name="jezykGry" value="Angielski"><label for="angielski"> Angielski</label>
+        <input type="checkbox" id="polski" name="jezykGry" value="Polski"><label for="polski"> Polski</label>
+        <input type="checkbox" id="innyJezyk" name="jezykGry" value="Inny"><label for="innyJezyk"> Inny</label>
+        <input type="checkbox" id="brakJezyka" name="jezykGry" value="Brak"><label for="brakJezyka"> Brak</label>
+        <input type="checkbox" id="wielojezyczny" name="jezykGry" value="Wielojęzyczny"><label for="wielojezyczny"> Wielojęzyczny</label>
+        <br>
+        <br>
+
+        <p><b>Platformy:</b></p>
+        <input type="checkbox" id="pc" name="platforma" value="PC"><label for="pc"> PC</label>
+        <input type="checkbox" id="xbox" name="platforma" value="Xbox"><label for="xbox"> Xbox</label>
+        <input type="checkbox" id="playstation" name="platforma" value="PlayStation"><label for="playstation"> PlayStation</label>
+        <input type="checkbox" id="nintendo" name="platforma" value="Nintendo"><label for="nintendo"> Nintendo</label>
+        <br>
+        <br>
+
+        <p><b>Tryby gry:</b></p>
+        <input type="checkbox" id="jednoosobowa" name="trybyGry" value="Gra jednoosobowa"><label for="jednoosobowa"> Gra jednoosobowa</label>
+        <input type="checkbox" id="wieloosobowa" name="trybyGry" value="Gra wieloosobowa"><label for="wieloosobowa"> Gra wieloosobowa</label>
+        <input type="checkbox" id="kooperacyjny" name="trybyGry" value="Tryb kooperacyjny"><label for="kooperacyjny"> Tryb kooperacyjny</label>
+        <br>
+        <input type="checkbox" id="sieciowy" name="trybyGry" value="Tryb sieciowy"><label for="sieciowy"> Tryb sieciowy</label>
+        <br>
+        <br>
+
+        <p><b>Dodatkowe opcje:</b></p>
+        <input type="checkbox" id="grafika4k" name="dodatkoweOpcje" value="Grafika 4K"><label for="grafika4k"> Grafika 4K</label>
+        <input type="checkbox" id="wsparcievr" name="dodatkoweOpcje" value="Wsparcie VR"><label for="wsparcievr"> Wsparcie VR</label>
+        <input type="checkbox" id="mikroplatnosci" name="dodatkoweOpcje" value="Mikropłatności"><label for="mikroplatnosci"> Mikropłatności</label>
+        <br>
+        <input type="checkbox" id="edytorPoziomow" name="dodatkoweOpcje" value="Edytor poziomów"><label for="edytorPoziomow"> Edytor poziomów</label>
+        <input type="checkbox" id="inneOpcje" name="dodatkoweOpcje" value="Inne"><label for="inneOpcje"> Inne</label>
+        <br>
+        <br>
+
+        <button type="submit">WYŚLIJ</button>
+        <button type="reset">CZYŚĆ</button>
+        
+        <hr>
+
+        <p>
+            <label for="nick">Twój nick:</label>
+            <input type="text" id="nick" name="nick" value="Tymon">
+        </p>
+
+        <p>
+            <label for="haslo">Hasło:</label>
+            <input type="password" id="haslo" name="haslo" value="********">
+        </p>
+
+        <p>
+            <label for="powtorzHaslo">Powtórz hasło:</label>
+            <input type="password" id="powtorzHaslo" name="powtorzHaslo" value="********">
+        </p>
+
+        <p>
+            <label for="wiek">Twój wiek:</label>
+            <input type="number" id="wiek" name="wiek" value="15" min="1">
+        </p>
+
+        <p>
+            <label for="email">Adres e-mail:</label>
+            <input type="email" id="email" name="email" value="@">
+        </p>
+
+        <p>
+            <label for="ulubionaGra">Twoja ulubiona gra:</label>
+            <select id="ulubionaGra" name="ulubionaGra">
+                <option value="Fortnite" selected>Fortnite</option>
+                <option value="Inna">Inna</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="poziomDoswiadczenia">Twój poziom doświadczenia:</label>
+            <select id="poziomDoswiadczenia" name="poziomDoswiadczenia">
+                <option value="Początkujący" selected>Początkujący</option>
+                <option value="Średniozaawansowany">Średniozaawansowany</option>
+                <option value="Ekspert">Ekspert</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="preferowanyGatunek">Preferowany gatunek gier:</label>
+            <select id="preferowanyGatunek" name="preferowanyGatunek">
+                <option value="Akcji" selected>Akcji</option>
+                <option value="Przygodowa">Przygodowa</option>
+                <option value="Strategiczna">Strategiczna</option>
+            </select>
+        </p>
+        
+    </form>
+
+</body>
+</html>
